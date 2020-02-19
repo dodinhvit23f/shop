@@ -34,6 +34,7 @@ public class Product implements Serializable {
 
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.TABLE)
 	public String getId() {
 		return this.id;
 	}
